@@ -1,0 +1,15 @@
+Instruções
+
+    Substitua o conteúdo do seu arquivo install_beep_start.sh pelo código atualizado acima.
+
+    Dê permissão de execução para o script principal, se ainda não o fez:
+
+bash
+
+chmod +x dois_install_beep_start.sh
+
+Execute o script novamente:
+
+bash
+
+./dois_install_beep_start.sh
