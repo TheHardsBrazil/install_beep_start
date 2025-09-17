@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e  # Se der erro em qualquer etapa, para a execução
+set -e  # Se der erro em qualquer etapa, interrompe a execução
 
 # Nome do arquivo compactado dentro do repositório
 TAR_FILE="INSTALL_BEEP_START.tar.gz"
@@ -28,18 +28,20 @@ fi
 cd "$EXTRACT_DIR"
 
 echo "=== [3/4] Instalando o pacote .deb usando script interno... ==="
-if [ -f "SCRIPT_INSTALL/AUTO_INSTALL_BEEP/auto_install_beep_start.sh" ]; then
-    chmod +x SCRIPT_INSTALL/AUTO_INSTALL_BEEP/auto_install_beep_start.sh
-    ./SCRIPT_INSTALL/AUTO_INSTALL_BEEP/auto_install_beep_start.sh
+INSTALL_SCRIPT="SCRIPT_INSTALL/AUTO_INSTALL_BEEP/auto_install_beep_start.sh"
+if [ -f "$INSTALL_SCRIPT" ]; then
+    chmod +x "$INSTALL_SCRIPT"
+    "$INSTALL_SCRIPT"
 else
     echo "Script de instalação não encontrado!"
     exit 1
 fi
 
 echo "=== [4/4] Ativando início automático... ==="
-if [ -f "ATIVAR_INICIO_AUTO/ATIVIAR_AUTO_SCRIPT/auto_start_beep_start.sh" ]; then
-    chmod +x ATIVAR_INICIO_AUTO/ATIVIAR_AUTO_SCRIPT/auto_start_beep_start.sh
-    ./ATIVAR_INICIO_AUTO/ATIVIAR_AUTO_SCRIPT/auto_start_beep_start.sh
+AUTO_START_SCRIPT="ATIVAR_INICIO_AUTO/ATIVIAR_AUTO_ SCRIPT/auto_start_beep_start.sh"
+if [ -f "$AUTO_START_SCRIPT" ]; then
+    chmod +x "$AUTO_START_SCRIPT"
+    "$AUTO_START_SCRIPT"
 else
     echo "Script de inicialização automática não encontrado!"
     exit 1
