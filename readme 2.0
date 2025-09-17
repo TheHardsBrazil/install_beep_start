@@ -1,0 +1,8 @@
+👉 Basta salvar esse conteúdo como auto_config_beep_start.sh dentro da pasta INSTALL_BEEP_START, dar permissão de execução:
+
+
+chmod +x auto_config_beep_start.sh
+
+
+./auto_config_beep_start.sh
+
