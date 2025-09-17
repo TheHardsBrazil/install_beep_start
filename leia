@@ -1,0 +1,17 @@
+Instruções
+
+    Crie o arquivo install_beep_start.sh no diretório raiz do seu projeto e cole o conteúdo do primeiro script.
+
+    Crie o arquivo auto_install_beep_start.sh dentro da pasta SCRIPT_INSTALL/AUTO_INSTALL_BEEP e cole o conteúdo do segundo script.
+
+    Dê permissão de execução para ambos os scripts. Você pode fazer isso com o seguinte comando:
+
+bash
+
+chmod +x install_beep_start.sh SCRIPT_INSTALL/AUTO_INSTALL_BEEP/auto_install_beep_start.sh ATIVAR_INICIO_AUTO/ATIVAR_AUTO_SCRIPT/auto_setup_beep_start.sh
+
+Execute o script principal:
+
+bash
+
+./install_beep_start.sh

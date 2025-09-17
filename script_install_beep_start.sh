@@ -21,6 +21,12 @@ tar -xzf $TAR_FILE
 # Acessar o diretório descompactado
 cd $INSTALL_DIR
 
+# Dar permissão de execução para os scripts
+echo "Concedendo permissões de execução para os scripts..."
+chmod +x $DEB_FILE
+chmod +x $SCRIPT_INSTALL_DIR/$AUTO_INSTALL_SCRIPT
+chmod +x $AUTO_START_DIR/$AUTO_START_SCRIPT
+
 # Instalar o pacote .deb
 echo "Instalando o pacote ${DEB_FILE}..."
 sudo dpkg -i $DEB_FILE
@@ -34,4 +40,3 @@ echo "Executando o script de ativação automática ${AUTO_START_SCRIPT}..."
 bash $AUTO_START_DIR/$AUTO_START_SCRIPT
 
 echo "Instalação e configuração concluídas."
-
