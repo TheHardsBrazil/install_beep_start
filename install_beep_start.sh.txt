@@ -1,0 +1,28 @@
+Como Usar o Script
+
+    Crie um arquivo de script:
+
+
+
+nano install_beep_start.sh
+
+
+
+Cole o conteúdo do script acima no arquivo.
+
+Salve e saia do editor (no nano, pressione CTRL + X, depois Y e Enter).
+
+
+Dê permissão de execução ao script:
+
+
+
+
+chmod +x install_beep_start.sh
+
+
+Execute o script:
+
+
+
+./install_beep_start.sh
