@@ -1,0 +1,58 @@
+1. Baixar o Script
+
+Primeiro, você precisa clonar o repositório do GitHub ou baixar o arquivo .tar.gz diretamente. Aqui estão as duas opções:
+Opção 1: Clonar o Repositório
+
+Se você deseja clonar o repositório inteiro, use o seguinte comando:
+
+bash
+
+git clone https://github.com/thehardsbrazil/install_beep_start.git
+
+Isso criará uma pasta chamada install_beep_start no diretório atual.
+Opção 2: Baixar o Arquivo .tar.gz
+
+Se você preferir baixar apenas o arquivo .tar.gz, use o seguinte comando:
+
+bash
+
+wget https://github.com/thehardsbrazil/install_beep_start/archive/refs/heads/main.tar.gz
+
+2. Navegar até o Diretório
+
+Se você clonou o repositório, navegue até o diretório:
+
+bash
+
+cd install_beep_start
+
+Se você baixou o arquivo .tar.gz, navegue até o diretório onde o arquivo foi salvo.
+3. Executar o Script
+
+Agora, você pode executar o script que você criou. Se o script estiver no diretório atual, use:
+
+bash
+
+chmod +x install_beep_start.sh  # Dê permissão de execução, se ainda não tiver feito
+./install_beep_start.sh          # Execute o script
+
+Resumo dos Comandos
+
+Aqui está um resumo dos comandos que você pode usar:
+
+bash
+
+# Clonar o repositório
+git clone https://github.com/thehardsbrazil/install_beep_start.git
+cd install_beep_start
+
+# Ou, se você baixou o arquivo .tar.gz
+wget https://github.com/thehardsbrazil/install_beep_start/archive/refs/heads/main.tar.gz
+tar -xzf main.tar.gz
+cd install_beep_start
+
+# Executar o script
+chmod +x install_beep_start.sh
+./install_beep_start.sh
+
+Se você tiver mais perguntas ou precisar de mais assistência, estou aqui para ajudar!
